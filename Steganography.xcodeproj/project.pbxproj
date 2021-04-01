@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C3648FE2615C81F00CF167A /* SteganographyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3648FD2615C81F00CF167A /* SteganographyApp.swift */; };
+		9C3649002615C81F00CF167A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3648FF2615C81F00CF167A /* ContentView.swift */; };
+		9C3649022615C82000CF167A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3649012615C82000CF167A /* Assets.xcassets */; };
+		9C3649052615C82000CF167A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3649042615C82000CF167A /* Preview Assets.xcassets */; };
+		9C3649102615C82000CF167A /* SteganographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36490F2615C82000CF167A /* SteganographyTests.swift */; };
+		9C36491B2615C82000CF167A /* SteganographyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36491A2615C82000CF167A /* SteganographyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C36490C2615C82000CF167A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C3648F22615C81F00CF167A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C3648F92615C81F00CF167A;
+			remoteInfo = Steganography;
+		};
+		9C3649172615C82000CF167A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C3648F22615C81F00CF167A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C3648F92615C81F00CF167A;
+			remoteInfo = Steganography;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C3648FA2615C81F00CF167A /* Steganography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steganography.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3648FD2615C81F00CF167A /* SteganographyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyApp.swift; sourceTree = "<group>"; };
+		9C3648FF2615C81F00CF167A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C3649012615C82000CF167A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C3649042615C82000CF167A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C3649062615C82000CF167A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C36490B2615C82000CF167A /* SteganographyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteganographyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C36490F2615C82000CF167A /* SteganographyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyTests.swift; sourceTree = "<group>"; };
+		9C3649112615C82000CF167A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C3649162615C82000CF167A /* SteganographyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteganographyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C36491A2615C82000CF167A /* SteganographyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyUITests.swift; sourceTree = "<group>"; };
+		9C36491C2615C82000CF167A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C3648F72615C81F00CF167A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3649082615C82000CF167A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3649132615C82000CF167A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C3648F12615C81F00CF167A = {
+			isa = PBXGroup;
+			children = (
+				9C3648FC2615C81F00CF167A /* Steganography */,
+				9C36490E2615C82000CF167A /* SteganographyTests */,
+				9C3649192615C82000CF167A /* SteganographyUITests */,
+				9C3648FB2615C81F00CF167A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C3648FB2615C81F00CF167A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C3648FA2615C81F00CF167A /* Steganography.app */,
+				9C36490B2615C82000CF167A /* SteganographyTests.xctest */,
+				9C3649162615C82000CF167A /* SteganographyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C3648FC2615C81F00CF167A /* Steganography */ = {
+			isa = PBXGroup;
+			children = (
+				9C3648FD2615C81F00CF167A /* SteganographyApp.swift */,
+				9C3648FF2615C81F00CF167A /* ContentView.swift */,
+				9C3649012615C82000CF167A /* Assets.xcassets */,
+				9C3649062615C82000CF167A /* Info.plist */,
+				9C3649032615C82000CF167A /* Preview Content */,
+			);
+			path = Steganography;
+			sourceTree = "<group>";
+		};
+		9C3649032615C82000CF167A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9C3649042615C82000CF167A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C36490E2615C82000CF167A /* SteganographyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C36490F2615C82000CF167A /* SteganographyTests.swift */,
+				9C3649112615C82000CF167A /* Info.plist */,
+			);
+			path = SteganographyTests;
+			sourceTree = "<group>";
+		};
+		9C3649192615C82000CF167A /* SteganographyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C36491A2615C82000CF167A /* SteganographyUITests.swift */,
+				9C36491C2615C82000CF167A /* Info.plist */,
+			);
+			path = SteganographyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C3648F92615C81F00CF167A /* Steganography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C36491F2615C82000CF167A /* Build configuration list for PBXNativeTarget "Steganography" */;
+			buildPhases = (
+				9C3648F62615C81F00CF167A /* Sources */,
+				9C3648F72615C81F00CF167A /* Frameworks */,
+				9C3648F82615C81F00CF167A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Steganography;
+			productName = Steganography;
+			productReference = 9C3648FA2615C81F00CF167A /* Steganography.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C36490A2615C82000CF167A /* SteganographyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C3649222615C82000CF167A /* Build configuration list for PBXNativeTarget "SteganographyTests" */;
+			buildPhases = (
+				9C3649072615C82000CF167A /* Sources */,
+				9C3649082615C82000CF167A /* Frameworks */,
+				9C3649092615C82000CF167A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C36490D2615C82000CF167A /* PBXTargetDependency */,
+			);
+			name = SteganographyTests;
+			productName = SteganographyTests;
+			productReference = 9C36490B2615C82000CF167A /* SteganographyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C3649152615C82000CF167A /* SteganographyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C3649252615C82000CF167A /* Build configuration list for PBXNativeTarget "SteganographyUITests" */;
+			buildPhases = (
+				9C3649122615C82000CF167A /* Sources */,
+				9C3649132615C82000CF167A /* Frameworks */,
+				9C3649142615C82000CF167A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C3649182615C82000CF167A /* PBXTargetDependency */,
+			);
+			name = SteganographyUITests;
+			productName = SteganographyUITests;
+			productReference = 9C3649162615C82000CF167A /* SteganographyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C3648F22615C81F00CF167A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9C3648F92615C81F00CF167A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					9C36490A2615C82000CF167A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9C3648F92615C81F00CF167A;
+					};
+					9C3649152615C82000CF167A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 9C3648F92615C81F00CF167A;
+					};
+				};
+			};
+			buildConfigurationList = 9C3648F52615C81F00CF167A /* Build configuration list for PBXProject "Steganography" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C3648F12615C81F00CF167A;
+			productRefGroup = 9C3648FB2615C81F00CF167A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C3648F92615C81F00CF167A /* Steganography */,
+				9C36490A2615C82000CF167A /* SteganographyTests */,
+				9C3649152615C82000CF167A /* SteganographyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C3648F82615C81F00CF167A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3649052615C82000CF167A /* Preview Assets.xcassets in Resources */,
+				9C3649022615C82000CF167A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3649092615C82000CF167A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3649142615C82000CF167A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C3648F62615C81F00CF167A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3649002615C81F00CF167A /* ContentView.swift in Sources */,
+				9C3648FE2615C81F00CF167A /* SteganographyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3649072615C82000CF167A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C3649102615C82000CF167A /* SteganographyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C3649122615C82000CF167A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C36491B2615C82000CF167A /* SteganographyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C36490D2615C82000CF167A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C3648F92615C81F00CF167A /* Steganography */;
+			targetProxy = 9C36490C2615C82000CF167A /* PBXContainerItemProxy */;
+		};
+		9C3649182615C82000CF167A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C3648F92615C81F00CF167A /* Steganography */;
+			targetProxy = 9C3649172615C82000CF167A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9C36491D2615C82000CF167A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C36491E2615C82000CF167A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C3649202615C82000CF167A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Steganography/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PS5ZU236;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Steganography/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSCode.Steganography;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C3649212615C82000CF167A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Steganography/Preview Content\"";
+				DEVELOPMENT_TEAM = 93PS5ZU236;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Steganography/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSCode.Steganography;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9C3649232615C82000CF167A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93PS5ZU236;
+				INFOPLIST_FILE = SteganographyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSCode.SteganographyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steganography.app/Steganography";
+			};
+			name = Debug;
+		};
+		9C3649242615C82000CF167A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93PS5ZU236;
+				INFOPLIST_FILE = SteganographyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSCode.SteganographyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Steganography.app/Steganography";
+			};
+			name = Release;
+		};
+		9C3649262615C82000CF167A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93PS5ZU236;
+				INFOPLIST_FILE = SteganographyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSCode.SteganographyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Steganography;
+			};
+			name = Debug;
+		};
+		9C3649272615C82000CF167A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93PS5ZU236;
+				INFOPLIST_FILE = SteganographyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SSCode.SteganographyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Steganography;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C3648F52615C81F00CF167A /* Build configuration list for PBXProject "Steganography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C36491D2615C82000CF167A /* Debug */,
+				9C36491E2615C82000CF167A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C36491F2615C82000CF167A /* Build configuration list for PBXNativeTarget "Steganography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C3649202615C82000CF167A /* Debug */,
+				9C3649212615C82000CF167A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C3649222615C82000CF167A /* Build configuration list for PBXNativeTarget "SteganographyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C3649232615C82000CF167A /* Debug */,
+				9C3649242615C82000CF167A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C3649252615C82000CF167A /* Build configuration list for PBXNativeTarget "SteganographyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C3649262615C82000CF167A /* Debug */,
+				9C3649272615C82000CF167A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C3648F22615C81F00CF167A /* Project object */;
+}
