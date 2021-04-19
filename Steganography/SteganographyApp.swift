@@ -11,7 +11,7 @@ import SwiftUI
 struct SteganographyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(images: Images())
         }
     }
 }

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19DC7325FB1A69293692FB77 /* Pods_SteganographyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B39A5D6C6E0F67C0847C359 /* Pods_SteganographyTests.framework */; };
+		1C641C09CCBF09A52783A6B0 /* Pods_Steganography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD832C170FEFF128D36E18A /* Pods_Steganography.framework */; };
+		513A746B61AD9FBDC8DB4FC2 /* Pods_Steganography_SteganographyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04B7A3761141BA7BE26F000 /* Pods_Steganography_SteganographyUITests.framework */; };
 		9C3648FE2615C81F00CF167A /* SteganographyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3648FD2615C81F00CF167A /* SteganographyApp.swift */; };
 		9C3649002615C81F00CF167A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3648FF2615C81F00CF167A /* ContentView.swift */; };
 		9C3649022615C82000CF167A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3649012615C82000CF167A /* Assets.xcassets */; };
 		9C3649052615C82000CF167A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C3649042615C82000CF167A /* Preview Assets.xcassets */; };
 		9C3649102615C82000CF167A /* SteganographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36490F2615C82000CF167A /* SteganographyTests.swift */; };
 		9C36491B2615C82000CF167A /* SteganographyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36491A2615C82000CF167A /* SteganographyUITests.swift */; };
+		9C36492D2615C94600CF167A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36492C2615C94600CF167A /* ImageProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BD832C170FEFF128D36E18A /* Pods_Steganography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Steganography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D18036DA094974193AC24BC /* Pods-SteganographyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteganographyTests.debug.xcconfig"; path = "Target Support Files/Pods-SteganographyTests/Pods-SteganographyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26536B878729C097AB9D6159 /* Pods-Steganography.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganography.debug.xcconfig"; path = "Target Support Files/Pods-Steganography/Pods-Steganography.debug.xcconfig"; sourceTree = "<group>"; };
+		4381F3DFF60E2FA16100B7A2 /* Pods-Steganography-SteganographyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganography-SteganographyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Steganography-SteganographyUITests/Pods-Steganography-SteganographyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B39A5D6C6E0F67C0847C359 /* Pods_SteganographyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteganographyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3648FA2615C81F00CF167A /* Steganography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steganography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3648FD2615C81F00CF167A /* SteganographyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyApp.swift; sourceTree = "<group>"; };
 		9C3648FF2615C81F00CF167A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +54,11 @@
 		9C3649162615C82000CF167A /* SteganographyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteganographyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C36491A2615C82000CF167A /* SteganographyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyUITests.swift; sourceTree = "<group>"; };
 		9C36491C2615C82000CF167A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C36492C2615C94600CF167A /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		9D8BA2A0D3045AAE9C317C59 /* Pods-Steganography.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganography.release.xcconfig"; path = "Target Support Files/Pods-Steganography/Pods-Steganography.release.xcconfig"; sourceTree = "<group>"; };
+		A88E2E3A4F563C0EDA84719C /* Pods-SteganographyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteganographyTests.release.xcconfig"; path = "Target Support Files/Pods-SteganographyTests/Pods-SteganographyTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2E8A32285058934487A9B59 /* Pods-Steganography-SteganographyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganography-SteganographyUITests.release.xcconfig"; path = "Target Support Files/Pods-Steganography-SteganographyUITests/Pods-Steganography-SteganographyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C04B7A3761141BA7BE26F000 /* Pods_Steganography_SteganographyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Steganography_SteganographyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C641C09CCBF09A52783A6B0 /* Pods_Steganography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DC7325FB1A69293692FB77 /* Pods_SteganographyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513A746B61AD9FBDC8DB4FC2 /* Pods_Steganography_SteganographyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B8D88340132F6018E76F6BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BD832C170FEFF128D36E18A /* Pods_Steganography.framework */,
+				C04B7A3761141BA7BE26F000 /* Pods_Steganography_SteganographyUITests.framework */,
+				7B39A5D6C6E0F67C0847C359 /* Pods_SteganographyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C3648F12615C81F00CF167A = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +106,8 @@
 				9C36490E2615C82000CF167A /* SteganographyTests */,
 				9C3649192615C82000CF167A /* SteganographyUITests */,
 				9C3648FB2615C81F00CF167A /* Products */,
+				A543ED68586FF6AD37CA6808 /* Pods */,
+				2B8D88340132F6018E76F6BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +124,7 @@
 		9C3648FC2615C81F00CF167A /* Steganography */ = {
 			isa = PBXGroup;
 			children = (
+				9C36492B2615C8F000CF167A /* ImageProcessor */,
 				9C3648FD2615C81F00CF167A /* SteganographyApp.swift */,
 				9C3648FF2615C81F00CF167A /* ContentView.swift */,
 				9C3649012615C82000CF167A /* Assets.xcassets */,
@@ -130,6 +160,28 @@
 			path = SteganographyUITests;
 			sourceTree = "<group>";
 		};
+		9C36492B2615C8F000CF167A /* ImageProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				9C36492C2615C94600CF167A /* ImageProcessor.swift */,
+			);
+			path = ImageProcessor;
+			sourceTree = "<group>";
+		};
+		A543ED68586FF6AD37CA6808 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26536B878729C097AB9D6159 /* Pods-Steganography.debug.xcconfig */,
+				9D8BA2A0D3045AAE9C317C59 /* Pods-Steganography.release.xcconfig */,
+				4381F3DFF60E2FA16100B7A2 /* Pods-Steganography-SteganographyUITests.debug.xcconfig */,
+				B2E8A32285058934487A9B59 /* Pods-Steganography-SteganographyUITests.release.xcconfig */,
+				1D18036DA094974193AC24BC /* Pods-SteganographyTests.debug.xcconfig */,
+				A88E2E3A4F563C0EDA84719C /* Pods-SteganographyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C36491F2615C82000CF167A /* Build configuration list for PBXNativeTarget "Steganography" */;
 			buildPhases = (
+				EF5DCEFE0F64BEBF03764BD4 /* [CP] Check Pods Manifest.lock */,
 				9C3648F62615C81F00CF167A /* Sources */,
 				9C3648F72615C81F00CF167A /* Frameworks */,
 				9C3648F82615C81F00CF167A /* Resources */,
+				575D88D977CED9DD5A63391C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C3649222615C82000CF167A /* Build configuration list for PBXNativeTarget "SteganographyTests" */;
 			buildPhases = (
+				F90990F0BFE0E1A5114A1710 /* [CP] Check Pods Manifest.lock */,
 				9C3649072615C82000CF167A /* Sources */,
 				9C3649082615C82000CF167A /* Frameworks */,
 				9C3649092615C82000CF167A /* Resources */,
@@ -172,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C3649252615C82000CF167A /* Build configuration list for PBXNativeTarget "SteganographyUITests" */;
 			buildPhases = (
+				81F0E05A4076797C6DD6E9BD /* [CP] Check Pods Manifest.lock */,
 				9C3649122615C82000CF167A /* Sources */,
 				9C3649132615C82000CF167A /* Frameworks */,
 				9C3649142615C82000CF167A /* Resources */,
+				421770AAD412A3D0ACAF29F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +311,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		421770AAD412A3D0ACAF29F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steganography-SteganographyUITests/Pods-Steganography-SteganographyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steganography-SteganographyUITests/Pods-Steganography-SteganographyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Steganography-SteganographyUITests/Pods-Steganography-SteganographyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		575D88D977CED9DD5A63391C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steganography/Pods-Steganography-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steganography/Pods-Steganography-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Steganography/Pods-Steganography-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F0E05A4076797C6DD6E9BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Steganography-SteganographyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF5DCEFE0F64BEBF03764BD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Steganography-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90990F0BFE0E1A5114A1710 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SteganographyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C3648F62615C81F00CF167A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9C3649002615C81F00CF167A /* ContentView.swift in Sources */,
+				9C36492D2615C94600CF167A /* ImageProcessor.swift in Sources */,
 				9C3648FE2615C81F00CF167A /* SteganographyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +575,7 @@
 		};
 		9C3649202615C82000CF167A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26536B878729C097AB9D6159 /* Pods-Steganography.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +598,7 @@
 		};
 		9C3649212615C82000CF167A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D8BA2A0D3045AAE9C317C59 /* Pods-Steganography.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +621,7 @@
 		};
 		9C3649232615C82000CF167A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D18036DA094974193AC24BC /* Pods-SteganographyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +644,7 @@
 		};
 		9C3649242615C82000CF167A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88E2E3A4F563C0EDA84719C /* Pods-SteganographyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +667,7 @@
 		};
 		9C3649262615C82000CF167A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4381F3DFF60E2FA16100B7A2 /* Pods-Steganography-SteganographyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +688,7 @@
 		};
 		9C3649272615C82000CF167A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2E8A32285058934487A9B59 /* Pods-Steganography-SteganographyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
