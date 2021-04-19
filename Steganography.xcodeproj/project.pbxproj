@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		9C3649102615C82000CF167A /* SteganographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36490F2615C82000CF167A /* SteganographyTests.swift */; };
 		9C36491B2615C82000CF167A /* SteganographyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36491A2615C82000CF167A /* SteganographyUITests.swift */; };
 		9C36492D2615C94600CF167A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36492C2615C94600CF167A /* ImageProcessor.swift */; };
+		9C68E84A262D816E004ED766 /* HideImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68E849262D816E004ED766 /* HideImageView.swift */; };
+		9C68E857262D8644004ED766 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68E856262D8644004ED766 /* ImagePicker.swift */; };
+		9C68E85C262D871A004ED766 /* UnhideImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68E85B262D871A004ED766 /* UnhideImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		9C36491A2615C82000CF167A /* SteganographyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteganographyUITests.swift; sourceTree = "<group>"; };
 		9C36491C2615C82000CF167A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C36492C2615C94600CF167A /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		9C68E849262D816E004ED766 /* HideImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideImageView.swift; sourceTree = "<group>"; };
+		9C68E856262D8644004ED766 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9C68E85B262D871A004ED766 /* UnhideImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnhideImageView.swift; sourceTree = "<group>"; };
 		9D8BA2A0D3045AAE9C317C59 /* Pods-Steganography.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganography.release.xcconfig"; path = "Target Support Files/Pods-Steganography/Pods-Steganography.release.xcconfig"; sourceTree = "<group>"; };
 		A88E2E3A4F563C0EDA84719C /* Pods-SteganographyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteganographyTests.release.xcconfig"; path = "Target Support Files/Pods-SteganographyTests/Pods-SteganographyTests.release.xcconfig"; sourceTree = "<group>"; };
 		B2E8A32285058934487A9B59 /* Pods-Steganography-SteganographyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steganography-SteganographyUITests.release.xcconfig"; path = "Target Support Files/Pods-Steganography-SteganographyUITests/Pods-Steganography-SteganographyUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 				9C3649012615C82000CF167A /* Assets.xcassets */,
 				9C3649062615C82000CF167A /* Info.plist */,
 				9C3649032615C82000CF167A /* Preview Content */,
+				9C68E849262D816E004ED766 /* HideImageView.swift */,
+				9C68E856262D8644004ED766 /* ImagePicker.swift */,
+				9C68E85B262D871A004ED766 /* UnhideImageView.swift */,
 			);
 			path = Steganography;
 			sourceTree = "<group>";
@@ -178,7 +187,6 @@
 				1D18036DA094974193AC24BC /* Pods-SteganographyTests.debug.xcconfig */,
 				A88E2E3A4F563C0EDA84719C /* Pods-SteganographyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -421,7 +429,10 @@
 			files = (
 				9C3649002615C81F00CF167A /* ContentView.swift in Sources */,
 				9C36492D2615C94600CF167A /* ImageProcessor.swift in Sources */,
+				9C68E857262D8644004ED766 /* ImagePicker.swift in Sources */,
+				9C68E84A262D816E004ED766 /* HideImageView.swift in Sources */,
 				9C3648FE2615C81F00CF167A /* SteganographyApp.swift in Sources */,
+				9C68E85C262D871A004ED766 /* UnhideImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
