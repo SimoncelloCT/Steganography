@@ -10,22 +10,57 @@ import SwiftUI
 struct UnhideImageView: View {
     @State var showImagePicker: Bool = false
     @StateObject var images: Images
+    @State var decryptKeyString = ""
     var body: some View {
         VStack{
             Button(action: {
                  images.empty()
                  self.showImagePicker.toggle()
             }) {
-                Text("Select image")
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    .font(.subheadline)
+                    Text("Select image")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                }
+                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .accentColor(.green)
+                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+                .cornerRadius(15)
             }
+            .buttonStyle(PlainButtonStyle())
+            
              Button(action: {
                  let processor = ImageProcessor(height: 400, width: 400)
-                 images.processedImage = processor.unhideImage(stegImage: images.processedImage!, secretKey: "ciao")
+                 images.processedImage = processor.unhideImage(stegImage: images.processedImage!, secretKey: decryptKeyString)
              }) {
-                 Text("Unhide image")
-             }.disabled(images.processedImage == nil)
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    .font(.subheadline)
+                    Text("Unhide image")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                }
+                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .accentColor(.green)
+                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+                .cornerRadius(15)
+             }
+             .buttonStyle(PlainButtonStyle())
+             .disabled(images.processedImage == nil || decryptKeyString == "")
+             .padding()
+            
+            TextField("Enter decrypt key", text: $decryptKeyString)
+                .frame(width: 320, height: 40, alignment: .center)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+            
             Image(uiImage: images.processedImage ?? UIImage())
-                .resizable().frame(width: 400, height: 400)
+                .resizable().frame(width: 300, height: 300)
+                .cornerRadius(3.0)
+                .clipped()
+            
          }
      
          .sheet(isPresented: $showImagePicker) {

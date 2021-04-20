@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HideImageView: View {
     @State var showImagePicker: Bool = false
-    @State var showDialog: Bool = false
     @State var encryptKeyString : String = ""
     @StateObject var images: Images
     @State var progressLabel : String = ""
@@ -20,19 +19,75 @@ struct HideImageView: View {
                 self.showImagePicker.toggle()
                 progressLabel = ""
            }) {
-               Text("Select original image")
-              
+            HStack {
+                Image(systemName: "square.and.arrow.up")
+                .font(.subheadline)
+                Text("Select original image")
+                .fontWeight(.semibold)
+                .font(.subheadline)
+            }
+            .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .accentColor(.green)
+            .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+            .cornerRadius(15)
            }
+           .buttonStyle(PlainButtonStyle())
+            
             Button(action: {
                 self.showImagePicker.toggle()
             }) {
-                Text("Select image to hide")
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    .font(.subheadline)
+                    Text("Select image to hide")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                }
+                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .accentColor(.green)
+                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+                .cornerRadius(15)
             }
+            .buttonStyle(PlainButtonStyle())
+            .padding()
+            
             Button(action: {
-                showDialog = true
+                let processor = ImageProcessor(height: 400, width: 400)
+                images.processedImage = processor.hideImage(originalImage: images.firstImage!, imageToHide: images.secondImage!, secretKey: encryptKeyString)!
+                progressLabel = "Image hidden!"
             }) {
-                Text("Hide image")
-            }.disabled(images.firstImage == nil || images.secondImage == nil)
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    .font(.subheadline)
+                    Text("Hide image")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                }
+                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .accentColor(.green)
+                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+                .cornerRadius(15)
+            }
+            .disabled(images.firstImage == nil || images.secondImage == nil || encryptKeyString == "")
+            .buttonStyle(PlainButtonStyle())
+        
+            TextField("Enter encrypt key", text: $encryptKeyString)
+                .frame(width: 320, height: 40, alignment: .center)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            HStack{
+                Image(uiImage: images.firstImage ?? UIImage())
+                    .resizable().frame(width: 160, height: 160)
+                    .cornerRadius(3.0)
+                    .clipped()
+                Image(uiImage: images.secondImage ?? UIImage())
+                    .resizable().frame(width: 160, height: 160)
+                    .cornerRadius(3.0)
+                    .clipped()
+                    
+            }
+            .padding()
             
             Button(action: {
                 if let image = images.processedImage{
@@ -40,42 +95,27 @@ struct HideImageView: View {
                     progressLabel = "Image saved!"
                 }
             }) {
-                Text("Save processed image")
-            }.disabled(images.processedImage == nil)
-            
-            HStack{
-                Image(uiImage: images.firstImage ?? UIImage())
-                    .resizable().frame(width: 200, height: 200)
-                Image(uiImage: images.secondImage ?? UIImage())
-                    .resizable().frame(width: 200, height: 200)
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                    .font(.subheadline)
+                    Text("Save processed image")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                }
+                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .accentColor(.green)
+                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+                .cornerRadius(15)
+                
             }
-            .padding()
-            
-            if showDialog {
-                ZStack{
-                    Text("Enter an encrypt key")
-                    VStack{
-                        TextField("Enter encrypt key", text: $encryptKeyString)
-                        Spacer()
-                        Button(action: {
-                            self.showDialog = false
-                            let processor = ImageProcessor(height: 400, width: 400)
-                            images.processedImage = processor.hideImage(originalImage: images.firstImage!, imageToHide: images.secondImage!, secretKey: encryptKeyString)!
-                            progressLabel = "Image hidden!"
-                        }, label: {
-                            Text("Encrypt")
-                        })
-                        .disabled(encryptKeyString == "")
-                    }
-                    .padding()
-                }.frame(width: 300, height: 200)
-                .cornerRadius(20).shadow(radius: 20)
-            }
+            .disabled(images.processedImage == nil)
+            .buttonStyle(PlainButtonStyle())
             
             Text(progressLabel)
-                
+                .padding()
+                .accentColor(.secondary)
+            
         }
-    
         .sheet(isPresented: $showImagePicker) {
             ImagePicker(sourceType: .photoLibrary) { image in
                 if let _ = images.firstImage{
@@ -86,6 +126,26 @@ struct HideImageView: View {
                 }
             }
         }
+    }
+}
+
+struct GradientBackgroundStyle: ButtonStyle {
+ 
+    var color: Color
+    
+    init(color : Color) {
+        self.color = color
+    }
+    
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .padding()
+            .foregroundColor(.none)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.gray, color]), startPoint: .leading, endPoint: .trailing))
+            .cornerRadius(15)
+            .padding(.horizontal, 20)
+            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
     }
 }
 
