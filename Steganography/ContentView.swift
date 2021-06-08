@@ -16,13 +16,13 @@ struct ContentView: View {
             TabView{
                 HideImageView(images: images)
                     .tabItem {
-                        Image(systemName: "phone.fill")
+                        Image(systemName: "square.and.arrow.down")
                         Text("Hide image")
 
                     }
                 UnhideImageView(images: images)
                     .tabItem {
-                        Image(systemName: "phone.fill")
+                        Image(systemName: "square.and.arrow.up")
                         Text("Unhide image")
                     }
             }
@@ -34,7 +34,8 @@ struct ContentView: View {
    public class Images : ObservableObject {
         @Published var firstImage : UIImage?
         @Published var secondImage : UIImage?
-        @Published var processedImage: UIImage?
+        @Published var unhidableImage: UIImage?
+        @Published var unhiddenImage: UIImage?
         
         public func empty(){
             firstImage = nil

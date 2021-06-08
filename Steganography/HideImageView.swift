@@ -20,7 +20,7 @@ struct HideImageView: View {
                 progressLabel = ""
            }) {
             HStack {
-                Image(systemName: "square.and.arrow.up")
+                Image(systemName: "doc.badge.plus")
                 .font(.subheadline)
                 Text("Select original image")
                 .fontWeight(.semibold)
@@ -37,7 +37,7 @@ struct HideImageView: View {
                 self.showImagePicker.toggle()
             }) {
                 HStack {
-                    Image(systemName: "square.and.arrow.up")
+                    Image(systemName: "doc.badge.plus")
                     .font(.subheadline)
                     Text("Select image to hide")
                     .fontWeight(.semibold)
@@ -53,11 +53,11 @@ struct HideImageView: View {
             
             Button(action: {
                 let processor = ImageProcessor(height: 400, width: 400)
-                images.processedImage = processor.hideImage(originalImage: images.firstImage!, imageToHide: images.secondImage!, secretKey: encryptKeyString)!
-                progressLabel = "Image hidden!"
+                images.unhidableImage = processor.hideImage(originalImage: images.firstImage!, imageToHide: images.secondImage!, secretKey: encryptKeyString)!
+                progressLabel = "Image hidden successful"
             }) {
                 HStack {
-                    Image(systemName: "square.and.arrow.up")
+                    Image(systemName: "square.and.arrow.down")
                     .font(.subheadline)
                     Text("Hide image")
                     .fontWeight(.semibold)
@@ -78,38 +78,42 @@ struct HideImageView: View {
             
             HStack{
                 Image(uiImage: images.firstImage ?? UIImage())
-                    .resizable().frame(width: 160, height: 160)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 160, height: 160)
                     .cornerRadius(3.0)
                     .clipped()
                 Image(uiImage: images.secondImage ?? UIImage())
-                    .resizable().frame(width: 160, height: 160)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 160, height: 160)
                     .cornerRadius(3.0)
                     .clipped()
                     
             }
             .padding()
             
-            Button(action: {
-                if let image = images.processedImage{
-                    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                    progressLabel = "Image saved!"
-                }
-            }) {
-                HStack {
-                    Image(systemName: "square.and.arrow.up")
-                    .font(.subheadline)
-                    Text("Save processed image")
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                }
-                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .accentColor(.green)
-                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
-                .cornerRadius(15)
-                
-            }
-            .disabled(images.processedImage == nil)
-            .buttonStyle(PlainButtonStyle())
+//            Button(action: {
+//                if let image = images.processedImage{
+//                    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+//                    progressLabel = "Image saved!"
+//                }
+//            }) {
+//                HStack {
+//                    Image(systemName: "square.and.arrow.up")
+//                    .font(.subheadline)
+//                    Text("Save processed image")
+//                    .fontWeight(.semibold)
+//                    .font(.subheadline)
+//                }
+//                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                .accentColor(.green)
+//                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+//                .cornerRadius(15)
+//
+//            }
+//            .disabled(images.processedImage == nil)
+//            .buttonStyle(PlainButtonStyle())
             
             Text(progressLabel)
                 .padding()

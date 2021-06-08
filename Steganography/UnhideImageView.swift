@@ -13,27 +13,27 @@ struct UnhideImageView: View {
     @State var decryptKeyString = ""
     var body: some View {
         VStack{
-            Button(action: {
-                 images.empty()
-                 self.showImagePicker.toggle()
-            }) {
-                HStack {
-                    Image(systemName: "square.and.arrow.up")
-                    .font(.subheadline)
-                    Text("Select image")
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                }
-                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .accentColor(.green)
-                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
-                .cornerRadius(15)
-            }
-            .buttonStyle(PlainButtonStyle())
+//            Button(action: {
+//                 images.empty()
+//                 self.showImagePicker.toggle()
+//            }) {
+//                HStack {
+//                    Image(systemName: "square.and.arrow.up")
+//                    .font(.subheadline)
+//                    Text("Select image")
+//                    .fontWeight(.semibold)
+//                    .font(.subheadline)
+//                }
+//                .frame(width: 320, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                .accentColor(.green)
+//                .background(Color(UIColor.systemGreen.withAlphaComponent(0.6)))
+//                .cornerRadius(15)
+//            }
+//            .buttonStyle(PlainButtonStyle())
             
              Button(action: {
                  let processor = ImageProcessor(height: 400, width: 400)
-                 images.processedImage = processor.unhideImage(stegImage: images.processedImage!, secretKey: decryptKeyString)
+                 images.unhiddenImage = processor.unhideImage(stegImage: images.unhidableImage!, secretKey: decryptKeyString)
              }) {
                 HStack {
                     Image(systemName: "square.and.arrow.up")
@@ -48,7 +48,7 @@ struct UnhideImageView: View {
                 .cornerRadius(15)
              }
              .buttonStyle(PlainButtonStyle())
-             .disabled(images.processedImage == nil || decryptKeyString == "")
+             .disabled(images.unhidableImage == nil || decryptKeyString == "")
              .padding()
             
             TextField("Enter decrypt key", text: $decryptKeyString)
@@ -56,18 +56,20 @@ struct UnhideImageView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 
             
-            Image(uiImage: images.processedImage ?? UIImage())
-                .resizable().frame(width: 300, height: 300)
+            Image(uiImage: (images.unhiddenImage ?? images.unhidableImage) ?? UIImage())
+                .resizable()
+                .scaledToFill()
+                .frame(width: 300, height: 300)
                 .cornerRadius(3.0)
                 .clipped()
             
          }
      
-         .sheet(isPresented: $showImagePicker) {
-             ImagePicker(sourceType: .photoLibrary) { image in
-                images.processedImage = image
-             }
-         }
+//         .sheet(isPresented: $showImagePicker) {
+//             ImagePicker(sourceType: .photoLibrary) { image in
+//                images.processedImage = image
+//             }
+//         }
     }
 }
 
